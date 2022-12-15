@@ -6,7 +6,12 @@ import openai
 api_key = st.text_input("Enter your ChatGPT API key:", type="password")
 
 # Get prompt from user
-prompt = st.text_input("Enter your code prompt:", placeholder="write a python script to print hello world")
+prompt = st.text_area("Enter your free text prompt:", 
+                       placeholder="write a python script to print hello world",
+                       height=200)
+
+# Create a slider to control the temperature of the model
+temperature = st.slider("Increase the temperature for more variations", 0.0, 1.0, value=0.5, step=0.1)
 
 # Set up request to ChatGPT API
 headers = {
@@ -28,12 +33,13 @@ if st.button("Submit"):
     max_tokens=1024,
     n = 1,
     stop=None,
-    temperature=0.5)
+    temperature=temperature)
     
     # Display response
     st.code(response["choices"][0]["text"])
     
 if __name__ == "__main__":
-    st.title("ChatGPT Code Generator")
-    st.write("Enter your ChatGPT API key and code prompt to generate Python code.")
-    st.write("Note: Your API key is private and should not be shared with anyone.")
+    st.header("ChatGPT Code Generator")
+    # place sidebar on the left
+    st.text("Enter your ChatGPT API key and code prompt to generate Python code.")
+    st.text("Note: Your API key is private and should not be shared with anyone.")
