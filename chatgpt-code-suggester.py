@@ -42,5 +42,3 @@ if __name__ == "__main__":
     st.header("ChatGPT Code Generator")
     st.text("Enter your ChatGPT API key and prompt to generate suggested code in any language you specify.")
     st.text("Note: Your API key is private and should not be shared with anyone.")
-
-openai.Completion.create()
