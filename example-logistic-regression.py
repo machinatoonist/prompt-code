@@ -5,6 +5,7 @@
 
 from sklearn import datasets
 from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import classification_report, confusion_matrix
 
 # load the iris dataset
 dataset = datasets.load_iris()
@@ -18,5 +19,6 @@ expected = dataset.target
 predicted = model.predict(dataset.data)
 
 # summarize the fit of the model
-print(metrics.classification_report(expected, predicted))
-print(metrics.confusion_matrix(expected, predicted))
+print(classification_report(expected, predicted))
+print(confusion_matrix(expected, predicted))
+print(model.score(dataset.data, predicted))
