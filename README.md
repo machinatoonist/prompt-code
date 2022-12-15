@@ -1,2 +1,3 @@
 # prompt-code
-Calls ChatGPT API to return suggest text
+Calls ChatGPT API to return suggested text.
+Requires your API key to work.
