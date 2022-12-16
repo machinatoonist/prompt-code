@@ -1,3 +1,9 @@
+# To update this list run the following code in the Command Line:
+curl https://api.openai.com/v1/models \
+  -H 'Authorization: Bearer YOUR_API_KEY' \
+  -o output.txt
+
+
 {
   "object": "list",
   "data": [
