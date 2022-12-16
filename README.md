@@ -13,7 +13,7 @@ Once you have an API key you can head over to Streamlit Cloud and launch the cod
 
 `streamlit run app.py`
 
-Some example outputs is included. I suggest using version control to record the initial model output, settings and then any changes required to make it work as originally intended.
+Some example outputs are included. I suggest using version control to record the initial model output, settings and then any changes required to make it work as originally intended.
 
 Here are some ways you might leverage ChatGPT to increase your coding efficiency and productivity:
 - **Debugging suggested code** so that is works. Many times the suggested code is not going to work. You can simply copy and paste it into your favourite IDE and test it out. Often the code will work without alteration and other times it will need a few tweaks. If the code is way off target it probably better to improve your prompt and/or change the temperature and try again.
