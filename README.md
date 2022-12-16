@@ -9,7 +9,7 @@ One caveat is that this application does not yet maintain session state in the w
 
 The benefit of using your own API key and application is that you will likely have fewer dropouts and the ability to make further customisations.  For example, in this demonstration you can alter the temperature of the model to see how the suggestions vary for the same text prompt.
 
-Once you have an API key you can head over to Streamlit Cloud and launch the code directly from the GitHub repository or simply run the app locally using the command:
+Once you have an API key you can head over to Streamlit Cloud and launch the code directly from the GitHub repository or simply clone this repository and run the app locally using the command:
 
 `streamlit run app.py`
 
