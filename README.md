@@ -1,11 +1,11 @@
 # Prompt Code
-Calls the ChatGPT API to return a response to your free text prompt.
+Calls the OpenAI API to return a response to your free text prompt.
 
 This repository can be used to launch your own Streamlit app that you can host locally or on Streamlit Cloud.
 
 To use the app you will need to get your own personal API key via OpenAI. 
 
-One caveat is that this application does not yet maintain session state in the way that you can in OpenAI's native app. The native OpenAI interface allows you to refer to previous queries as you would in a typical chat app. Even still, if you are careful in the way you craft your initial text prompt with this Streamlit app you can get some surprisingly thorough code suggestions.
+One caveat is that this application does not yet maintain session state in the way that you can in OpenAI's ChatGPT app. The ChatGPT interface allows you to refer to previous queries as you would in a typical chat app. Even still, if you are careful in the way you craft your initial text prompt with this Streamlit app you can get some surprisingly thorough code suggestions.
 
 The benefit of using your own API key and application is that you will likely have fewer dropouts and the ability to make further customisations.  For example, in this demonstration you can alter the temperature of the model to see how the suggestions vary for the same text prompt.
 
