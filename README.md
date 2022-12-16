@@ -1,4 +1,4 @@
-# prompt-code
+# Prompt Code
 Calls the ChatGPT API to return a response to your free text prompt.
 
 This repository can be used to launch your own Streamlit app that you can host locally or on Streamlit Cloud.
