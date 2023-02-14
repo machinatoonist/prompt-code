@@ -1,7 +1,7 @@
 # Prompt Code
 Calls the OpenAI API to return a response to your free text prompt.
 
-This repository can be used to launch your own Streamlit app that you can host locally or on Streamlit Cloud.
+This repository can be used to launch your own Streamlit or Shiny app that you can host locally or on the Cloud.
 
 To use the app you will need to get your own personal API key via OpenAI. 
 
@@ -12,6 +12,8 @@ The benefit of using your own API key and application is that you will likely ha
 Once you have an API key you can head over to Streamlit Cloud and launch the code directly from the GitHub repository or simply clone this repository and run the app locally using the command:
 
 `streamlit run app.py`
+
+If running the Shiny app you can click Run in RStudio or enter `shiny::runApp()` in the console.
 
 Some example outputs are included. I suggest using version control to record the initial model output, settings and then any changes required to make it work as originally intended.
 
